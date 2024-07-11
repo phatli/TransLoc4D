@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  transloc4d:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    image: transloc4d
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/home/user/TransLoc4D
+      - /mnt/transloc4d_datasets:/home/user/datasets
+    ipc: host
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+

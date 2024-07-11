@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "eval",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/eval.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--database_pickle","/home/user/datasets/nyl-night-rsvi_test_evaluation_database_25.pickle",
+                "--query_pickle", "/home/user/datasets/nyl-night-rsvi_test_evaluation_query_25.pickle",
+                "--model_config", "config/model/transloc4d.txt",
+                "--weights", "weights/transloc4d.pth"
+            ]
+        },
+        {
+            "name": "train",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/train.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--config", "config/train/ntu-rsvi.txt",
+                "--model_config", "config/model/transloc4d.txt"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+[DEFAULT]
+dataset_folder = /home/user/datasets
+
+[TRAIN]
+num_workers = 0
+# 2048, 1536
+batch_size = 768
+# 128, 96
+batch_split_size = 64
+val_batch_size = 96
+
+lr = 1e-3
+epochs = 500
+scheduler_milestones = 350, 450
+aug_mode = 1
+weight_decay = 1e-4
+loss = TruncatedSmoothAP
+tau1 = 0.01
+positives_per_query = 4
+
+train_file = train_queries_ntu-rsvi.pickle
+val_query = ntu-rsvi_val_evaluation_query_25.pickle
+val_database = ntu-rsvi_val_evaluation_database_25.pickle

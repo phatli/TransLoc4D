@@ -1,0 +1,30 @@
+[MODEL]
+model=TransLoc3d
+
+conv0_out_channels=64
+conv0_kernel_size=5
+conv0_stride=1
+conv1_out_channels=64
+conv1_kernel_size=2
+conv1_stride=2
+
+num_attn_layers=6
+global_channels=64
+local_channels=0
+num_centers=256, 128, 128, 64, 64, 64
+num_heads=2
+
+out_channels=256
+feature_size=256
+output_dim=256
+
+pooling=netvladgc
+
+coordinates=cartesian
+normalize_xyz = False
+quantization_step=0.01
+
+normalize_embeddings=False
+input_representation=R
+self_att=False
+add_FTU=False
