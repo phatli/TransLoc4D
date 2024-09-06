@@ -30,7 +30,7 @@ Alternatively, perform a manual installation as follows:
    ```
 
 ## Datasets and Model Weights
-The datasets used in this study (dynamic points removed with velocity), and model weights trained on the NTU dataset are available [here]().
+The datasets used in this study (dynamic points removed with velocity) can be found [here](https://entuedu-my.sharepoint.com/:f:/g/personal/heshan001_e_ntu_edu_sg/EtDhy41KPAFFqTD6wb9-1EABl-bXqnez8HXFRJgIPOJosg?e=IRzzft), and model weights trained on the NTU dataset are available [here](https://entuedu-my.sharepoint.com/:f:/g/personal/heshan001_e_ntu_edu_sg/EpNaXwtTW99KghTTzrkbisEBQX5wDyVvmIjRBQZF8e7_Kg?e=55Qpup).
 
 ### Model Performance
 
