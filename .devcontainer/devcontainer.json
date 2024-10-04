@@ -3,7 +3,7 @@
 {
   "name": "TransLoc4dDev",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "dockerComposeFile": "../docker-comopose.yml",
+  "dockerComposeFile": "../docker-compose.yml",
   "service": "transloc4d",
   "workspaceFolder": "/home/user/TransLoc4D",
   "shutdownAction": "stopCompose",
